@@ -1,0 +1,14 @@
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\Interview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\Interview.AssemblyInfoInputs.cache
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\Interview.AssemblyInfo.cs
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\Interview.csproj.CoreCompileInputs.cache
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\bin\Debug\net8.0\Interview.exe
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\bin\Debug\net8.0\Interview.deps.json
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\bin\Debug\net8.0\Interview.runtimeconfig.json
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\bin\Debug\net8.0\Interview.dll
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\bin\Debug\net8.0\Interview.pdb
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\Interview.dll
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\refint\Interview.dll
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\Interview.pdb
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\Interview.genruntimeconfig.cache
+C:\Users\tiago\OneDrive\Ambiente de Trabalho\Entrevista\Copy\Interview\Interview\obj\Debug\net8.0\ref\Interview.dll
