@@ -1,5 +1,6 @@
 ﻿
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 
 namespace Interview
 {
@@ -140,7 +141,6 @@ namespace Interview
                 File.Delete(file);
             }
 
-            // Apaga todas as subpastas e seu conteúdo
             foreach (string subDir in Directory.GetDirectories(destDir))
             {
                 Directory.Delete(subDir, recursive: true);
@@ -149,25 +149,27 @@ namespace Interview
 
         private static void SynchFolders(string sourceDir, string destDir)
         {
-        
-            DirectoryInfo dir = new DirectoryInfo(sourceDir);
-            if (!dir.Exists)
+            using (var md5 = MD5.Create())
             {
-                throw new DirectoryNotFoundException($"Diretório de origem não encontrado: {sourceDir}");
-            }
+                DirectoryInfo dir = new DirectoryInfo(sourceDir);
+                if (!dir.Exists)
+                {
+                    throw new DirectoryNotFoundException($"Diretório de origem não encontrado: {sourceDir}");
+                }
 
-            Directory.CreateDirectory(destDir);
+                Directory.CreateDirectory(destDir);
 
-            foreach (FileInfo file in dir.GetFiles())
-            {
-                string destFilePath = Path.Combine(destDir, file.Name);
-                file.CopyTo(destFilePath); 
-            }
+                foreach (FileInfo file in dir.GetFiles())
+                {
+                    string destFilePath = Path.Combine(destDir, file.Name);
+                    file.CopyTo(destFilePath); 
+                }
 
-            foreach (DirectoryInfo subdir in dir.GetDirectories())
-            {
-                string destSubDirPath = Path.Combine(destDir, subdir.Name);
-                SynchFolders(subdir.FullName, destSubDirPath); 
+                foreach (DirectoryInfo subdir in dir.GetDirectories())
+                {
+                    string destSubDirPath = Path.Combine(destDir, subdir.Name);
+                    SynchFolders(subdir.FullName, destSubDirPath); 
+                }
             }
           
         }
